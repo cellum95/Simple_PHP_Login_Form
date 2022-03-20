@@ -28,6 +28,8 @@
 
 ###### Removed Registration Form.php file to avoid confusion in code base.
 
+###### Updated style.php file
+
 ### Error/s
 
 ###### 1. Cannot seem to retrieve $_POST[...] information to Third_Page.php
