@@ -27,3 +27,7 @@
 ### Error/s
 
 ###### 1. Cannot seem to retrieve $_POST[...] information to Third_Page.php
+
+### Missing
+
+###### 1. Missing setcookie() code
