@@ -24,6 +24,10 @@
 
 ###### -------
 
+#### 03/20/2022 8:27 PM
+
+###### Removed Registration Form.php file to avoid confusion in code base.
+
 ### Error/s
 
 ###### 1. Cannot seem to retrieve $_POST[...] information to Third_Page.php
