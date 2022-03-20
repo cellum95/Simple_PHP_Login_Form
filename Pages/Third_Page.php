@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 
 <html>
@@ -18,7 +21,30 @@
 	
 	<main>
 
-	<h2>WELCOME TO THE ANOMALY SIGHTING FORUM</h2>
+		<h2>WELCOME TO THE ANOMALY SIGHTING FORUM</h2>
+
+		<div class = "profile-div">
+
+			<div class = "profile-div-one">
+
+				<h2>User Profile</h2>
+
+				<h4>Last Name: </h4>
+
+				<h4>First Name: </h4>
+
+				<h4>Middle Name: </h4>
+
+				<h4>Email: </h4><p>
+
+				<h4>Username: </h4>
+
+
+				<h4>Password: </h4><p>
+
+			</div>
+
+		</div>
 		
 	</main>
 </body>
