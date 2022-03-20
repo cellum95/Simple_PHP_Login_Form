@@ -9,6 +9,7 @@
 	-text-secondary: #FFFFFF;
 	--bg-primary: #009900;
 	--bg-secondary: #818181;
+	--bg-tertiary: #FFFFFF;
 }
 
 body {
@@ -38,7 +39,7 @@ form {
 	border: 3px solid black;
 }
 
-h2 {
+h2, h4 {
 	margin-top: 3rem;
 	text-align: center;
 }
@@ -51,8 +52,29 @@ button {
 	display: block;
 }
 
+input {
+	margin: auto;
+	text-align: center;
+	display: block;
+}
+
 a {
 	margin: auto;
 	text-align: center;
 	display: block;
+}
+
+.profile-div {
+	display: flex;
+	border: 1px solid black;
+	padding: 1rem;
+	background-color: var(--bg-secondary);
+	width: 50%;
+	margin: auto;
+}
+
+.profile-div-one {
+	flex: 1;
+	margin: auto;
+	background-color: var(--bg-tertiary);
 }
