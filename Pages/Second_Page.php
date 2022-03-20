@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -20,36 +24,61 @@
 
 	<h2>REGISTRATION</h2>
 
-	<form action = "../index.php" method = "post">
+	<form action = "Second_Page.php" method = "POST">
 		
 
 		<b>Last Name:</b><br>
-		<input type = "text" name = "lname" style = "width : 95%;"><br>
+		<input type = "text" name = "l_name" style = "width : 95%;">
 
 		<b>First Name:</b><br>
-		<input type = "text" name = "fname" style = "width : 95%;">
+		<input type = "text" name = "f_name" style = "width : 95%;">
 
 		<b>Middle Name:</b><br>
-		<input type = "text" name = "mname" style = "width : 95%;">
+		<input type = "text" name = "m_name" style = "width : 95%;">
 
 		<b>E-mail:</b><br>
-		<input type = "text" name = "email" style = "width : 95%;">
+		<input type = "text" name = "e_m" style = "width : 95%;">
+		
 
 		<b>Username:</b><br>
-		<input type = "text" name = "username" style = "width : 95%;">
+		<input type = "text" name = "u_name" style = "width : 95%;">
+
 
 		<b>Password:</b><br>
-		<input type = "text" name = "password" style = "width : 95%;">
+		<input type = "password" name = "p_word" style = "width : 95%;">
 
 		<b>Re-enter Password:</b><br>
-		<input type = "text" name = "password" style = "width : 95%;">
+		<input type = "password" name = "rp_word" style = "width : 95%;">
 
 		<br>
 		<br>
 
-		<button name = "btn-submit" type = "submit" value = "../index.php">Register</button>
-		
+		<input type = "hidden" name = "register_submit" value = "1">
+		<input type="submit" value="Register">
+
+		<?php
+			if(isset($_POST['register_submit'])) {
+				$_POST['l_name'];
+				$_POST['f_name'];
+				$_POST['m_name'];
+				$_POST['e_m'];
+				$_POST['u_name'];
+				$_POST['p_word'];
+				$_POST['rp_word'];
+
+
+				if($_POST['rp_word'] != $_POST['p_word']) {
+					echo "Password does not match";
+				}
+				else {
+					header('Location: ../index.php');
+				}
+			}
+		?>
+
 	</form>
+
+
 		
 	</main>
 </body>
